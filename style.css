@@ -1,4 +1,8 @@
 /* styles.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 .button-style {
     background-color: #143A7B;
     border: none;
@@ -12,11 +16,19 @@
     cursor: pointer;
     border: none;
     border-radius: 15px;
-    position: absolute;
+    /* position: absolute; */
     right: 5%;
     bottom: 5%;
+    display: flex;
+    flex-direction: column; 
 }
 
 .parent-class {
     width: max-content;
 }
+
+.apply-button.disabled {
+    pointer-events: none;
+    opacity: 0.5; /* Optionally reduce the opacity to visually indicate it's disabled */
+    cursor: not-allowed; /* Optionally change the cursor to indicate it's not clickable */
+  }
