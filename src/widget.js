@@ -1,5 +1,4 @@
 async function updateWidgetContent(uuid) {
-  console.log(uuid);
   const apiUrl = `https://catfact.ninja/fact`;
 
   const resPromise = fetch(apiUrl)
